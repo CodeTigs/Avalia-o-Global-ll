@@ -1,6 +1,6 @@
 # Avaliação-Global-ll
 # 🌸 Classificador de Flores Iris - Machine Learning
-
+# Autores : Tiago Rodrigues Plum Ferreira GEC 1996 / Matheus José Almeida Finamor GEC 1436
 Este projeto foi desenvolvido como parte da Avaliação Global 2 (AG2) para as disciplinas de Engenharia de Computação e Software do **Inatel** (Instituto Nacional de Telecomunicações).
 
 O objetivo é aplicar conceitos de Aprendizado de Máquina para classificar flores da espécie *Iris* em três categorias: **Setosa**, **Versicolor** e **Virginica**, baseando-se nas dimensões de suas pétalas e sépalas.
@@ -27,3 +27,5 @@ Certifique-se de ter o Python instalado. Em seguida, instale as bibliotecas nece
 
 ```bash
 pip install pandas scikit-learn
+
+
