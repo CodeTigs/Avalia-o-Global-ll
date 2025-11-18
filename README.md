@@ -1,1 +1,29 @@
-# Avalia-o-Global-ll
+# Avaliação-Global-ll
+# 🌸 Classificador de Flores Iris - Machine Learning
+
+Este projeto foi desenvolvido como parte da Avaliação Global 2 (AG2) para as disciplinas de Engenharia de Computação e Software do **Inatel** (Instituto Nacional de Telecomunicações).
+
+O objetivo é aplicar conceitos de Aprendizado de Máquina para classificar flores da espécie *Iris* em três categorias: **Setosa**, **Versicolor** e **Virginica**, baseando-se nas dimensões de suas pétalas e sépalas.
+
+## 📋 Descrição do Projeto
+
+O software realiza o ciclo completo de um projeto de Data Science:
+1.  **Coleta:** Carregamento do conjunto de dados Iris (originalmente de Ronald Fisher, 1936).
+2.  **Pré-processamento:** Conversão de dados categóricos (nomes das espécies) para numéricos.
+3.  **Modelagem:** Treinamento de uma **Árvore de Decisão (Decision Tree)**.
+4.  **Avaliação:** Verificação da acurácia e relatório de classificação (Precision, Recall, F1-Score).
+5.  **Aplicação:** Interface via terminal para que o usuário insira novas medidas e receba a classificação em tempo real.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Linguagem:** Python 3
+* **Manipulação de Dados:** Pandas
+* **Machine Learning:** Scikit-Learn (sklearn)
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+Certifique-se de ter o Python instalado. Em seguida, instale as bibliotecas necessárias:
+
+```bash
+pip install pandas scikit-learn
