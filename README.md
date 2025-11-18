@@ -3,7 +3,7 @@
 # Autores : Tiago Rodrigues Plum Ferreira GEC 1996 / Matheus José Almeida Finamor GEC 1436
 Este projeto foi desenvolvido como parte da Avaliação Global 2 (AG2) para as disciplinas de Engenharia de Computação e Software do **Inatel** (Instituto Nacional de Telecomunicações).
 
-O objetivo é aplicar conceitos de Aprendizado de Máquina para classificar flores da espécie *Iris* em três categorias: **Setosa**, **Versicolor** e **Virginica**, baseando-se nas dimensões de suas pétalas e sépalas.
+Este projeto implementa um modelo de Machine Learning para classificar flores do conjunto de dados Iris. O objetivo é treinar, avaliar e disponibilizar um classificador capaz de prever a espécie de uma flor com base em quatro medidas
 
 ## 📋 Descrição do Projeto
 
