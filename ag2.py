@@ -3,19 +3,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report, accuracy_score
 
-# ============================================================
-# ETAPA 1 e 2 – BAIXAR e LER O CONJUNTO DE DADOS
-# ============================================================
 
 url = "https://raw.githubusercontent.com/marcelovca90-inatel/AG2/refs/heads/main/iris.csv"
 df = pd.read_csv(url)
 
 print("Dados carregados com sucesso!\n")
 print(df.head())
-
-# ============================================================
-# ETAPA 3 – CONVERTER STRING -> INTEIRO (replace)
-# ============================================================
 
 mapping = {
     "Iris-setosa": 1,
@@ -28,19 +21,11 @@ df["species"] = df["species"].replace(mapping).astype("int64")
 print("\nEspécies convertidas para números:")
 print(df.head())
 
-# ============================================================
-# ETAPA 4 – DEFINIR ATRIBUTOS (X) E CLASSE (y)
-# ============================================================
-
 # todas as colunas menos 'species' são atributos
 feature_cols = [col for col in df.columns if col != "species"]
 
 X = df[feature_cols]
 y = df["species"]
-
-# ============================================================
-# ETAPA 5 – SEPARAR TREINO E TESTE (80/20 + shuffle)
-# ============================================================
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y,
@@ -53,21 +38,12 @@ X_train, X_test, y_train, y_test = train_test_split(
 model = DecisionTreeClassifier(random_state=42)
 model.fit(X_train, y_train)
 
-# ============================================================
-# ETAPA 6 – AVALIAR O MODELO
-# ============================================================
-
 y_pred = model.predict(X_test)
 
 print("\n===== AVALIAÇÃO DO MODELO =====")
 print("Acurácia:", accuracy_score(y_test, y_pred))
 print("\nRelatório de Classificação:")
 print(classification_report(y_test, y_pred))
-
-
-# ============================================================
-# ETAPA 7 – ENTRADA DO USUÁRIO (predict) COM LOOP
-# ============================================================
 
 def classificar_usuario(model):
     while True:
@@ -108,3 +84,4 @@ def classificar_usuario(model):
 
 # Chamar função
 classificar_usuario(model)
+
